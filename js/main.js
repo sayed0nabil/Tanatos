@@ -3,6 +3,8 @@
 
 $(function(){
     //Trigger niceScroll plugin
+    $('#content').show();
+    $('#loading').hide();
     $("html").niceScroll({
         cursorcolor:"#f7600e" ,
         cusorwidth: "10px" ,

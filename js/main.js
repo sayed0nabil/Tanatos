@@ -1,10 +1,6 @@
 /*global $  , window */
 
-
-$(function(){
-    //Trigger niceScroll plugin
-    $('#content').show();
-    $('#loading').hide();
+$(document).ready(function(){
     $("html").niceScroll({
         cursorcolor:"#f7600e" ,
         cusorwidth: "10px" ,
@@ -75,6 +71,6 @@ $(function(){
             scrollTop: $(".sayhello").offset().top
         },1000);
     });
-    
-    
+    $('#content').show();
+    $('#loading').hide();
 });

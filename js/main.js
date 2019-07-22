@@ -6,18 +6,13 @@ $(document).ready(function(){
         cusorwidth: "10px" ,
         cusorborderradius: 0 ,
         cursorborder: "1px solid white"
-       
     });
     //window height
     var wh = $(window).height();
     //Header Height
     $("header").height(wh);
-    $(".features").innerHeight(wh*(2/3));
-    $(".subscribe").innerHeight(wh*(1/3));
-    $(".persons").innerHeight(wh*(3/5));
     $(".sayhello").innerHeight(wh*(9/10));
     $(".copyright").innerHeight(wh*(1/10));
-    $("aside").innerHeight(wh*.6);
     //Down Arrow 
     $(".downArrow").on("click",function(){
         $("html,body").animate({
@@ -34,13 +29,15 @@ $(document).ready(function(){
     $(".menu i").on("click",function(){
         if(M === 0){
         $("aside").animate({
-            width:"140px"
+            width:"140px",
+            right: '10px'
         },400);
         M = 1;
         }
         else {
             $("aside").animate({
-            width:"0"
+            width:"0",
+            right: '0'
             },400);
             M = 0;
         }

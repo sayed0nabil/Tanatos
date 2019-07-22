@@ -7,8 +7,10 @@
         <title>Project Title</title>
         <!-- Nice reset -->
         <link rel="stylesheet" href="css/normalize.css"/>
-        <!-- css file -->
-        <link rel="stylesheet" href="css/main.css"/>
+        <!-- Bootstrap file -->
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <!--Grid System-->
+        <link rel="stylesheet" href="css/bootstrap-grid.css"/>
         <!-- Font icons library -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
         <!-- if IE 9-->
@@ -18,16 +20,17 @@
         <link rel="shortcut icon" href="images/image1.png"/>
         <!-- open sans font-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-
+        <!-- css file -->
+        <link rel="stylesheet" href="css/main.css"/>
         
     </head>
     <body>   
         <div id='content'>
             <header>
                 <div class="overlay">
+                    <a id='logo' href='#'>Tantos<span class="main-color">studio</span></a>
                     <div class="container table relative">
                         <div class="navbar">
-                            <span>Tantos<span class="main-color">studio</span></span>
                             <span class="menu">
                                 <i class="fa fa-bars fa-lg"></i>
                             </span>
@@ -61,42 +64,44 @@
             <!-- start features  -->
             <div class="features">
                 <div class="container">
-                    <div class="f1">
-                        <i class="fa fa-desktop"></i>
-                        <h2 class="upper">web desgin</h2>
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        </p>
-                    </div>
-                    <div class="f2">
-                        <i class="fa fa-pinterest-p"></i>
-                        <h2 class="upper">print desgin</h2>
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        </p>
-                    </div>
-                    <div class="f3">
-                        <i class="fa fa-binoculars"></i>
-                        <h2 class="upper">print desgin</h2>
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        </p>
-                    </div>
-                    <div class="f4">
-                        <i class="fa fa-bicycle"></i>
-                        <h2 class="upper">Go sport</h2>
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        </p>
+                    <div class="row text-center">
+                            <div class="f1 col-md-3">
+                                    <i class="fa fa-desktop"></i>
+                                    <h2 class="upper">web desgin</h2>
+                                    <p>
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    </p>
+                                </div>
+                                <div class="f2 col-md-3">
+                                    <i class="fa fa-pinterest-p"></i>
+                                    <h2 class="upper">print desgin</h2>
+                                    <p>
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    </p>
+                                </div>
+                                <div class="f3 col-md-3">
+                                    <i class="fa fa-binoculars"></i>
+                                    <h2 class="upper">print desgin</h2>
+                                    <p>
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    </p>
+                                </div>
+                                <div class="f4 col-md-3">
+                                    <i class="fa fa-bicycle"></i>
+                                    <h2 class="upper">Go sport</h2>
+                                    <p>
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    </p>
+                                </div>
                     </div>
                 </div>
             </div>
             <!-- End features  -->
             <!-- Start subscribe   -->
-            <div class="subscribe">
+            <div class="subscribe flex-center">
                 <div class="container">
                         <input type="email" placeholder="Enter your email address"/>
-                        <input class="upper" type="submit" value="subscribe"/>
+                        <input class="upper mt-md-0 mt-3 p-2" type="submit" value="subscribe"/>
                 </div>
             </div>
             <!-- End subscribe   -->
@@ -107,20 +112,28 @@
                     <p class="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br/> nisi ut aliquip ex ea commodo consequat
                     </p>
                     <div class="basicphoto">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div class="row justify-content-around">
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                        </div>
                     </div>
                     <div class="littlephoto none">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div class="row justify-content-around">
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                            <div class='col-md-3 mb-3'></div>
+                        </div>
                     </div>
                     <button class="center upper">Show more</button>
                 </div>
@@ -145,50 +158,52 @@
                 <div class="center container">
                     <p class="upper">our<span class="upper main-color"> team</span></p>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit<br/> voluptatem accusantium doloremque laudantium totam rem</p>
-                    <div class="team">
-                        <img src="images/team1.jpg" width=100% height=55%/>
-                        <p>Catherina Gail</p>
-                        <p>
-                            <i class="fa fa-facebook-square"></i>
-                            <i class="fa fa-twitter-square"></i>
-                            <i class="fa fa-google-plus-square"></i>
-                        </p>
-                        <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
-                        </p>
-                        
-                    </div>
-                    <div class="team">
-                        <img src="images/team2.jpg" width=100% height=55%/>
-                        <p>Catherina Gail</p>
-                        <p>
-                            <i class="fa fa-facebook-square"></i>
-                            <i class="fa fa-twitter-square"></i>
-                            <i class="fa fa-google-plus-square"></i>
-                        </p>
-                        <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
-                        </p>
-                    </div>
-                    <div class="team">
-                        <img src="images/team3.jpg" width=100% height=55%/>
-                        <p>Catherina Gail</p>
-                        <p>
-                            <i class="fa fa-facebook-square"></i>
-                            <i class="fa fa-twitter-square"></i>
-                            <i class="fa fa-google-plus-square"></i>
-                        </p>
-                        <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
-                        </p>
-                    </div>
-                    <div class="team">
-                        <img src="images/team4.jpg" width=100% height=55%/>
-                        <p>Catherina Gail</p>
-                        <p>
-                            <i class="fa fa-facebook-square"></i>
-                            <i class="fa fa-twitter-square"></i>
-                            <i class="fa fa-google-plus-square"></i>
-                        </p>
-                        <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
-                        </p>
+                    <div class="row justify-content-around">
+                        <div class="team col-md-2 col-5">
+                                <img src="images/team1.jpg" width=100% height=55%/>
+                                <p>Catherina Gail</p>
+                                <p>
+                                    <i class="fa fa-facebook-square"></i>
+                                    <i class="fa fa-twitter-square"></i>
+                                    <i class="fa fa-google-plus-square"></i>
+                                </p>
+                                <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
+                                </p>
+                                
+                            </div>
+                            <div class="team col-md-2 col-5">
+                                <img src="images/team2.jpg" width=100% height=55%/>
+                                <p>Catherina Gail</p>
+                                <p>
+                                    <i class="fa fa-facebook-square"></i>
+                                    <i class="fa fa-twitter-square"></i>
+                                    <i class="fa fa-google-plus-square"></i>
+                                </p>
+                                <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
+                                </p>
+                            </div>
+                            <div class="team col-md-2 col-5">
+                                <img src="images/team3.jpg" width=100% height=55%/>
+                                <p>Catherina Gail</p>
+                                <p>
+                                    <i class="fa fa-facebook-square"></i>
+                                    <i class="fa fa-twitter-square"></i>
+                                    <i class="fa fa-google-plus-square"></i>
+                                </p>
+                                <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
+                                </p>
+                            </div>
+                            <div class="team col-md-2 col-5">
+                                <img src="images/team4.jpg" width=100% height=55%/>
+                                <p>Catherina Gail</p>
+                                <p>
+                                    <i class="fa fa-facebook-square"></i>
+                                    <i class="fa fa-twitter-square"></i>
+                                    <i class="fa fa-google-plus-square"></i>
+                                </p>
+                                <p class="silver">Ut enim ad minim veniam, quis<br/> nostrud exercitation ullamco laboris
+                                </p>
+                            </div>
                     </div>
                     <div class="points">
                         <span></span>
@@ -219,7 +234,7 @@
                         </form>
                         <div class="hireus center">
                             <button class="upper">hire us</button>
-                            <span></span>
+                            <span class='d-none d-md-inline-block'></span>
                             <i class="fa fa-facebook-square"></i>
                             <i class="fa fa-twitter-square"></i>
                             <i class="fa fa-google-plus-square"></i>

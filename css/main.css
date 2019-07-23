@@ -67,7 +67,7 @@ aside p{
     line-height: 2;
 }
 aside p:hover{
-    background: silver;
+    background: rgba(255, 255, 255, .3);
 }
 /* Start Logo Style */
 #logo{
@@ -240,10 +240,10 @@ header .downArrow i{
     float:left;
     height:260px;
     overflow: hidden;
-    transation: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .works .container div div div:hover{
-    border: 1px solid #f7600e;
+    border: 4px solid #f7600e;
 }
 .works .container div  div div:first-of-type{
     background: url("../images/p1.jpg");

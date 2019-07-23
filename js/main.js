@@ -11,8 +11,6 @@ $(document).ready(function(){
     var wh = $(window).height();
     //Header Height
     $("header").height(wh);
-    $(".sayhello").innerHeight(wh*(9/10));
-    $(".copyright").innerHeight(wh*(1/10));
     //Down Arrow 
     $(".downArrow").on("click",function(){
         $("html,body").animate({
@@ -29,8 +27,8 @@ $(document).ready(function(){
     $(".menu i").on("click",function(){
         if(M === 0){
         $("aside").animate({
-            width:"140px",
-            right: '10px'
+            width:"50px",
+            right: '30px'
         },400);
         M = 1;
         }
